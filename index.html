@@ -16,11 +16,8 @@
     />
     <link rel="stylesheet" type='text/css'href="/style.css" />
 
-    <link id='theme-style' rel="stylesheet" type='text/css' href="/dark.css" />
-
-    <!-- <link id='theme-style' rel="stylesheet" type='text/css' href="/green.css" /> -->
-
-    <link id='theme-style' rel="stylesheet" type='text/css' href="/blue.css" /> 
+    <link id='theme-style' rel="stylesheet" type='text/css' href="" />
+ 
 
     <script defer src="/nav.js"></script>
     <title>Tyler's Dev Portfolio</title>
@@ -89,10 +86,10 @@
             <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
 
             <div id='theme-options-wrapper'>
-              <div id='light-mode'class="theme-dot"></div>
-              <div id='dark-mode'class="theme-dot"></div>
-              <div id='red-mode'class="theme-dot"></div>
-              <div id='blue-mode'class="theme-dot"></div>
+              <div data-mode='light' id='light-mode'class="theme-dot"></div>
+              <div data-mode='dark' id='dark-mode'class="theme-dot"></div>
+              <div data-mode='volt' id='volt-mode'class="theme-dot"></div>
+              <div data-mode='blue' id='blue-mode'class="theme-dot"></div>
             </div>
 
             <p id='settings-note' >*Theme settings will be saved for<br/>your next visit</p>
@@ -240,5 +237,8 @@
 
       </div>
     </section>
+
+    <script type='text/javascript' src='script.js'></script>
+
   </body>
 </html>

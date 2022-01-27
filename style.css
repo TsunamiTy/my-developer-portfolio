@@ -279,19 +279,19 @@ box-shadow: 11px 11px 16px 1px rgba(0,0,0,0.76);
 }
 
 #light-mode {
-  background-color: #fff;
+  background-color: #DCDCDC;
 }
 
 #dark-mode {
   background-color: #0b0c10;
 }
 
-#red-mode {
-  background-color: #ec2049;
+#volt-mode {
+  background-color: #86c232;
 }
 
 #blue-mode {
-  background-color: #004e9a;
+  background-color: #3b8beb;
 }
 
 #settings-note {
@@ -470,6 +470,10 @@ body {
 
   padding: 0;
   margin: 0;
+}
+
+body * {
+  transition: 0.5s;
 }
 
 .s1 {
