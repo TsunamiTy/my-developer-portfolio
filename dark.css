@@ -1,17 +1,19 @@
 :root {
-    --maincolor:#363636;
-    --secondaryColor: #474747;
+    --maincolor:#0b0c10;
+    --secondaryColor: #1f2833;
   
-    --borderColor: #a8a7a7;
+    --borderColor: #45a29e;
   
-    --mainText: black;
-    --secondaryText: grey;
+    --mainText: #66fcf1;
+    --secondaryText: #c5c6c7;
+
+    --backgroundcolor: #0b0c10;
   
-    --themeDotBorder: black;
+    --themeDotBorder: #c5c6c7;
   
-    --previewBg:rgb(251, 249, 243, 0.8);
-    --previewShadow: #f0ead6;
+    --previewBg: rgb(25, 39, 52, 0.8);
+    --previewShadow: #45a29e;
   
-    --buttonColor: black;
+    --buttonColor: #45a29e;
   
   }
