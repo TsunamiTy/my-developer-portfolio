@@ -78,6 +78,8 @@ h6 {
   font-size: 16px;
 }
 
+
+
 /* ====Nav Bar==== */
 
 .primary-header {
@@ -169,7 +171,7 @@ a:visited {
   }
 }
 
-/* ====Main Page==== */
+/* ====Intro section==== */
 
 .greeting-wrapper {
   display: grid;
@@ -296,7 +298,7 @@ box-shadow: 11px 11px 16px 1px rgba(0,0,0,0.76);
 }
 
 #blue-mode {
-  background-color: #3b8beb;
+  background-color: #00a8e8;
 }
 
 #settings-note {
@@ -361,6 +363,7 @@ box-shadow: 11px 11px 16px 1px rgba(0,0,0,0.76);
   left: -5px;
 }
 
+/* ====About Section==== */
 .about-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -379,14 +382,20 @@ box-shadow: 11px 11px 16px 1px rgba(0,0,0,0.76);
   display: grid;
   align-content: center;
   text-align: center;
+  font-family: "Rubik", sans-serif;
 }
 
 #logo-img {
   width: 100%;
   align-items: center;
-  -webkit-box-shadow: 11px 11px 16px 1px rgba(0,0,0,0.76); 
-box-shadow: 11px 11px 16px 1px rgba(0,0,0,0.76);
+  /* -webkit-box-shadow: 11px 11px 16px 1px rgba(0,0,0,0.76); 
+box-shadow: 11px 11px 16px 1px rgba(0,0,0,0.76); */
+
+  cursor: pointer;
 }
+
+
+/* ====Project Section==== */
 
 .post-wrapper {
   display: grid;
@@ -425,7 +434,10 @@ box-shadow: 11px 11px 16px 1px rgba(0,0,0,0.76);
   font-size: 14px;
 }
 
-#contact-form {
+/* ====Contact Section==== */
+
+.links {
+
   display: block;
   max-width: 600px;
   margin: 0 auto;
@@ -434,9 +446,73 @@ box-shadow: 11px 11px 16px 1px rgba(0,0,0,0.76);
   border-radius: 5px;
   background-color: var(--maincolor);
   margin-bottom: 50px;
+  text-align: center;
+  font-family: Rubik;
   
 }
 
+
+/* LinkedIn */
+.link-icon1 {
+  
+  display: block;
+
+/* z-index: 9999; */
+background: url("https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-linkedin-social-media-justicon-flat-justicon.png");
+background-repeat: no-repeat;
+width: 4rem;
+border: 0;
+aspect-ratio: 1;
+cursor: pointer;
+
+}
+
+/* Facebook */
+.link-icon2 {
+  
+  display: block;
+
+/* z-index: 9999; */
+background: url("https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-facebook-social-media-justicon-flat-justicon.png");
+background-repeat: no-repeat;
+width: 4rem;
+border: 0;
+aspect-ratio: 1;
+cursor: pointer;
+
+}
+
+/* Twitter */
+.link-icon3 {
+  
+  display: block;
+
+/* z-index: 9999; */
+background: url("https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-twitter-social-media-justicon-flat-justicon.png");
+background-repeat: no-repeat;
+width: 4rem;
+border: 0;
+aspect-ratio: 1;
+cursor: pointer;
+
+}
+
+/* IG */
+.link-icon4 {
+  
+  display: block;
+
+/* z-index: 9999; */
+background: url("https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-instagram-social-media-justicon-flat-justicon.png");
+background-repeat: no-repeat;
+width: 4rem;
+border: 0;
+aspect-ratio: 1;
+cursor: pointer;
+
+}
+
+/* 
 #contact-form label {
   color: var(--mainText);
   line-height: 2.7em;
@@ -465,9 +541,9 @@ box-shadow: 11px 11px 16px 1px rgba(0,0,0,0.76);
   color: #fff;
   background-color: var(--buttonColor);
   border: none;
-}
+} */
 
-/* ====Post==== */
+/* ====Post Pages==== */
 
 .post-pic {
   width: 100%

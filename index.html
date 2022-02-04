@@ -1,139 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type='text/css'href="/style.css" />
 
-    <link id='theme-style' rel="stylesheet" type='text/css' href="" />
- 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type='text/css' href="/style.css" />
 
-    <script defer src="/nav.js"></script>
-    <title>Tyler's Dev Portfolio</title>
-  </head>
-  <body>
-    <header class="primary-header flex">
-      <div>
-        <img />
+  <link id='theme-style' rel="stylesheet" type='text/css' href="" />
+
+
+  <script defer src="/nav.js"></script>
+  <title>Tyler's Dev Portfolio</title>
+</head>
+
+<body>
+  <header class="primary-header flex">
+    <div>
+      <img />
+    </div>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only"></span>
+    </button>
+
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+        <li class="active">
+          <a href="index.html"> <span aria-hidden="true">00</span>Home </a>
+        </li>
+
+        <li>
+          <a href="#section1"> <span aria-hidden="true">01</span>About </a>
+        </li>
+
+        <li>
+          <a href="#section2"> <span aria-hidden="true">02</span>Projects </a>
+        </li>
+
+        <li>
+          <a href="#section3"> <span aria-hidden="true">03</span>Contact </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="s1">
+    <div class="main-container">
+      <div class="greeting-wrapper">
+        <h1>HELLO THERE, I'M TYLER HANKERSON</h1>
       </div>
 
-      <button
-        class="mobile-nav-toggle"
-        aria-controls="primary-navigation"
-        aria-expanded="false"
-      >
-        <span class="sr-only"></span>
-      </button>
+      <div class="intro-wrapper">
+        <div class="nav-wrapper">
+          <div class='dots-wrapper'>
+            <div id="dot-1" class='browser-dot'></div>
+            <div id="dot-2" class='browser-dot'></div>
+            <div id="dot-3" class='browser-dot'></div>
+          </div>
 
-      <nav>
-        <ul
-          id="primary-navigation"
-          data-visible="false"
-          class="primary-navigation flex"
-        >
-          <li class="active">
-            <a href="index.html"> <span aria-hidden="true">00</span>Home </a>
-          </li>
+          <ul id='navigation'>
 
-          <li>
-            <a href="#section1"> <span aria-hidden="true">01</span>About </a>
-          </li>
 
-          <li>
-            <a href="#section2"> <span aria-hidden="true">02</span>Projects </a>
-          </li>
+          </ul>
 
-          <li>
-            <a href="#section3"> <span aria-hidden="true">03</span>Contact </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section class="s1">
-      <div class="main-container">
-        <div class="greeting-wrapper">
-          <h1>HELLO THERE, I'M TYLER HANKERSON</h1>
         </div>
 
-        <div class="intro-wrapper">
-          <div class="nav-wrapper">
-            <div class='dots-wrapper'>
-              <div id="dot-1" class='browser-dot'></div>
-              <div id="dot-2" class='browser-dot'></div>
-              <div id="dot-3" class='browser-dot'></div>
-            </div>
+        <div class="left-column">
+          <img id='profile-pic' src="/images/IMG_0070.JPG" />
+          <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
 
-            <ul id='navigation'>
-              
-              
-            </ul>
-            
+          <div id='theme-options-wrapper'>
+            <div data-mode='light' id='light-mode' class="theme-dot"></div>
+            <div data-mode='dark' id='dark-mode' class="theme-dot"></div>
+            <div data-mode='volt' id='volt-mode' class="theme-dot"></div>
+            <div data-mode='blue' id='blue-mode' class="theme-dot"></div>
           </div>
 
-          <div class="left-column">
-            <img id='profile-pic' src="/images/IMG_0070.JPG"  />
-            <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+          <p id='settings-note'>*Theme settings will be saved for<br />your next visit</p>
+        </div>
 
-            <div id='theme-options-wrapper'>
-              <div data-mode='light' id='light-mode'class="theme-dot"></div>
-              <div data-mode='dark' id='dark-mode'class="theme-dot"></div>
-              <div data-mode='volt' id='volt-mode'class="theme-dot"></div>
-              <div data-mode='blue' id='blue-mode'class="theme-dot"></div>
-            </div>
+        <div class="right-column">
 
-            <p id='settings-note' >*Theme settings will be saved for<br/>your next visit</p>
-          </div>
+          <div id='preview-shadow'>
 
-          <div class="right-column">
-
-            <div id='preview-shadow'>
-
-              <div id='preview'>
-                <div id='corner-tl'class='corner'></div>
-                <div id='corner-tr'class='corner'></div>
+            <div id='preview'>
+              <div id='corner-tl' class='corner'></div>
+              <div id='corner-tr' class='corner'></div>
               <h3>What I do</h3>
               <p>I am a front-end web developer </br>
                 looking to expand my horizons with new projects and ideas.</p>
-                <div id='corner-br'class='corner'></div>
-                <div id='corner-bl'class='corner'></div>
-              </div>
+              <div id='corner-br' class='corner'></div>
+              <div id='corner-bl' class='corner'></div>
             </div>
-
           </div>
 
         </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="s2" id='section1'>
-      <div class="main-container">
+  <section class="s2" id='section1'>
+    <div class="main-container">
 
-        <div class='about-wrapper'>
-          <div class='about-me'>
-            <h4>More about me...</h4>
+      <div class='about-wrapper'>
+        <div class='about-me'>
+          <h4>More about me...</h4>
 
-            <p>I am a freelancer. I build new projects for clients looking 
-              for original and custom designs and content. </p>
+          <p>I am a freelancer. I build new projects for clients looking
+            for original and custom designs and content. </p>
 
-            <p>While keeping busy, I still attend job interviews, and networking events 
-              in search of a team and company that suits my desires. </p>  
-              
-              <hr>
-              
-              <h4>TOP EXPERTISE</h4>
-              
-              <p>Front-End web developer with primary focus in React: <a target='_blank' href='Web Dev Resume2022.docx.pdf'>Download Resume Here</a> </p>
+          <p>While keeping busy, I still attend job interviews, and networking events
+            in search of a team and company that suits my desires. </p>
+
+          <hr>
+
+          <h4>TOP EXPERTISE</h4>
+
+          <p>Front-End web developer with primary focus in React: <a target='_blank'
+              href='Web Dev Resume2022.docx.pdf'>Download Resume Here</a> </p>
 
           <div id='skills'>
             <ul>
@@ -151,94 +140,101 @@
               <li>jQuery</li>
               <li>Node</li>
             </ul>
-            
-          </div>
-          </div>    
-
-          <div class='social-links'>
-            <img id='logo-img' src='/images/Screen Shot 2022-01-27 at 9.13.40 AM.png'>
-            <h3>Find me on Twitter and Instagram</h3>
-
-            <a target='_blank' href='https://twitter.com/_tsunami_ty'>Twitter: @_tsunami_ty</a>
-            <br>
-            <a target='_blank' href='https://www.instagram.com/tsunamiwavegod/?hl=en'>Instagram: @tsunamiwavegod</a>
 
           </div>
-
-
-        </div>
-      </div>
-        
-    </section>
-
-    <section class="s1" id='section2'>
-      <div class="main-container">
-        <h3 style='text-align: center;'>Some of my past projects</h3>
-
-        <div class='post-wrapper'>
-
-          <div>
-            <div class='post'>
-              <img class='thumbnail' src='images/Screen Shot 2021-12-16 at 10.58.41 AM.png'>
-              <div class='post-preview'>
-                <h6 class='post-title'>Pokedex Pinpointer</h6>
-                <p class='post-intro'>A simple search application using jQuery and Poke API.</p>
-                <a href='post.html'>Catch a wave</a>
-              </div>
-            </div>
-            </div>
-
-            <div>
-              <div class='post'>
-                <img class='thumbnail' src='images/Screen Shot 2022-01-13 at 5.08.00 PM.png'>
-                <div class='post-preview'>
-                <h6 class='post-title'>Wavey Workouts</h6>
-                <p class='post-intro'>A full CRUD application using authentication and authorization.</p>
-                <a href='post2.html'>Catch a wave</a>
-              </div>
-            </div>
-          </div>
-            
-          <div>
-            <div class='post'>
-              <img class='thumbnail' src='images/Screen Shot 2022-01-27 at 9.13.40 AM.png'>
-              <div class='post-preview'>
-                <h6 class='post-title'>Post Title</h6>
-                <p class='post-intro'>This is a post. I like to postthings about other things.</p>
-                <a href='#'>Catch a wave</a>
-              </div>
-            </div>
-          </div>
-            
         </div>
 
-      </div>
-    </section>
+        <div class='social-links'>
+          <img id='logo-img' src='/images/ch-2-3-follow-button.png.twimg.1920.png'>
+          <h3>Find me on Twitter and Instagram</h3>
 
-    <section class="s2" id='section3'>
-      <div class="main-container">
-        <h3 style='text-align: center;'>Catch A Wave</h3>
+          <button class="link-icon3">
+            <span class="sr-only"></span>
+          </button>
+          <a target='_blank' href='https://twitter.com/_tsunami_ty'>Twitter: @_tsunami_ty</a>
 
-        <form id='contact-form'>
-          <label>Name</label>
-          <input class="input-field" type="text" name="name">
+          <br>
+          <button class="link-icon4">
+            <span class="sr-only"></span>
+          </button>
+          <a target='_blank' href='https://www.instagram.com/tsunamiwavegod/?hl=en'>Instagram: @tsunamiwavegod</a>
 
-          <label>Subject</label>
-          <input class="input-field" type="text" name="subject">
+        </div>
 
-          <label>Email</label>
-          <input class="input-field" type="text" name="email">
-
-          <label>Message</label>
-          <textarea class="input-field" name="message"></textarea>
-
-          <input id='submit-btn' type="submit" value='Send'>
-        </form>
 
       </div>
-    </section>
+    </div>
 
-    <script type='text/javascript' src='script.js'></script>
+  </section>
 
-  </body>
+  <section class="s1" id='section2'>
+    <div class="main-container">
+      <h3 style='text-align: center;'>Some of my past projects</h3>
+
+      <div class='post-wrapper'>
+
+        <div>
+          <div class='post'>
+            <img class='thumbnail' src='images/Screen Shot 2021-12-16 at 10.58.41 AM.png'>
+            <div class='post-preview'>
+              <h6 class='post-title'>Pokedex Pinpointer</h6>
+              <p class='post-intro'>A simple search application using jQuery and Poke API.</p>
+              <a href='post.html'>Catch a wave</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class='post'>
+            <img class='thumbnail' src='images/Screen Shot 2022-01-13 at 5.08.00 PM.png'>
+            <div class='post-preview'>
+              <h6 class='post-title'>Wavey Workouts</h6>
+              <p class='post-intro'>A full CRUD application using authentication and authorization.</p>
+              <a href='post2.html'>Catch a wave</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class='post'>
+            <img class='thumbnail' src='images/Screen Shot 2022-01-27 at 9.13.40 AM.png'>
+            <div class='post-preview'>
+              <h6 class='post-title'>Post Title</h6>
+              <p class='post-intro'>This is a post. I like to postthings about other things.</p>
+              <a href='#'>Catch a wave</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="s2" id='section3'>
+    <div class="main-container">
+      <h3 style='text-align: center;'>More ways to connect</h3>
+
+      <div class='links'>
+
+        <button class="link-icon1">
+          <span class="sr-only"></span>
+        </button>
+        <a target='_blank' href='https://www.linkedin.com/in/tyler-hankerson-10a19b115/'>LinkedIn: Tyler Hankerson</a>
+        <br>
+        <button class="link-icon2">
+          <span class="sr-only"></span>
+        </button>
+        <a target='_blank' href='https://www.facebook.com/tyler.hankerson'>Facebook: Tyler Hankerson</a>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <script type='text/javascript' src='script.js'></script>
+
+</body>
+
 </html>
